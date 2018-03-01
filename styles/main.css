@@ -87,3 +87,12 @@ footer a {
 footer a:hover {
 	opacity: 1;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+}
