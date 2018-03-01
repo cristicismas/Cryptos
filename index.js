@@ -1,22 +1,69 @@
 $(document).ready(function() {
+	
 	$.getJSON("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP,LTC,XMR,LSK,DASH,XEM,DOGE&tsyms=USD,EUR")
 	.done(function(data) {
 		handleCryptoPricing(data);
 	})
 	.fail(function() {
-		console.log("Error");
+		console.log("API Error");
+	})
+	
+	$(".refresh").click(function(e) {
+		e.preventDefault();
+		
+		var clickedRefreshButton = this;
+		
+		$.getJSON("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP,LTC,XMR,LSK,DASH,XEM,DOGE&tsyms=USD,EUR")
+		.done(function(data) {
+			switch(clickedRefreshButton.parentNode.parentNode.id) {
+				case "btc":
+					handleBTC(data);
+					break;
+				case "eth":
+					handleETH(data);
+					break;
+				case "xrp":
+					handleXRP(data);
+					break;
+				case "ltc":
+					handleLTC(data);
+					break;
+				case "xmr":
+					handleXMR(data);
+					break;
+				case "lsk":
+					handleLSK(data);
+					break;
+				case "dash":
+					handleDASH(data);
+					break;
+				case "xem":
+					handleXEM(data);
+					break;
+				case "doge":
+					handleDOGE(data);
+					break;
+				default:
+					handleCryptoPricing(data);
+					break;
+			}
+			console.log(clickedRefreshButton.parentNode.parentNode.id);
+		})
+		.fail(function() {
+			console.log("API Error");
+		});
 	});
 	
 	function handleCryptoPricing(data) {
-	handleBTC(data);
-	handleETH(data);
-	handleXRP(data);
-	handleLTC(data);
-	handleXMR(data);
-	handleLSK(data);
-	handleDASH(data);
-	handleXEM(data);
-	handleDOGE(data);
+		handleBTC(data);
+		handleETH(data);
+		handleXRP(data);
+		handleLTC(data);
+		handleXMR(data);
+		handleLSK(data);
+		handleDASH(data);
+		handleXEM(data);
+		handleDOGE(data);
 	}
 
 	function handleBTC(data) {

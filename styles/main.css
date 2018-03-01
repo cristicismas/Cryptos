@@ -1,3 +1,11 @@
+/* Variables */
+
+:root {
+	--bg-color: #001021;
+	--secondary-color: #081a26;
+	--card-hover-color: #14253a;
+}
+
 /* General */
 
 body {
@@ -7,7 +15,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	background-color: #001021;
+	background-color: var(--bg-color);
 	color: #ededed;
 	font-family: "Ubuntu", sans-serif;
 }
@@ -53,7 +61,7 @@ main {
 }
 
 main .crypto-card {
-	background-color: #081a26;
+	background-color: var(--secondary-color);
 	border-radius: 10px;
 	width: 300px;
 	padding: 10px 20px;
@@ -65,12 +73,45 @@ main .crypto-card span {
 	float: right;
 }
 
+main .crypto-card .refresh {
+	display: none;
+	text-transform: uppercase;
+	float: right;
+	font-size: 13px;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+main .crypto-card:hover {
+	background-color: var(--card-hover-color);
+}
+
+main .crypto-card:hover .refresh {
+	display: inline;
+	
+}
+
+.refresh-all {
+	align-self: center;
+	opacity: 0.7;
+	font-size: 20px;
+	background-color: var(--card-hover-color);
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px;
+}
+
+.refresh-all:hover {
+	opacity: 1;
+}
+
 /* Footer */
 
 footer {
 	display: flex;
 	justify-content: space-between;
-	background-color: #081a26;
+	background-color: var(--secondary-color);
 	margin-top: 20px;
 }
 
