@@ -132,8 +132,20 @@ footer a:hover {
 /* Media Queries */
 
 @media screen and (max-width: 500px) {
+	main .crypto-card:hover {
+		background-color: var(--secondary-color);
+	}
+	
+	main .crypto-card .refresh {
+		display: inline;
+	}
+	
 	footer {
 		flex-direction: column;
 		text-align: center;
+	}
+	
+	footer > * {
+		padding: 0;
 	}
 }

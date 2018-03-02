@@ -11,6 +11,8 @@ $(document).ready(function() {
 	$(".refresh").click(function(e) {
 		e.preventDefault();
 		
+		// 'this' needs to be saved into a variable
+		// because it will change context later
 		var clickedRefreshButton = this;
 		
 		$.getJSON("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP,LTC,XMR,LSK,DASH,XEM,DOGE&tsyms=USD,EUR")
@@ -47,7 +49,6 @@ $(document).ready(function() {
 					handleCryptoPricing(data);
 					break;
 			}
-			console.log(clickedRefreshButton.parentNode.parentNode.id);
 		})
 		.fail(function() {
 			console.log("API Error");
