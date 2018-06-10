@@ -22,85 +22,87 @@
 		
 	</head>
 	<body>
-		<header>
-			<h1>Cryptos</h1>
-			<h3>Your friendly crypto-currency price checker.</h3>
-			<h6>Here are some of the most popular crypto-currencies:</h6>
-		</header>
-		
-		<main>
-			<div class="crypto-card" id="btc">
-				<h2>Bitcoin<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
+		<div id="root">
+			<header>
+				<h1>Cryptos</h1>
+				<h3>Your friendly crypto-currency price checker.</h3>
+				<h6>Here are some of the most popular crypto-currencies:</h6>
+			</header>
 			
-			<div class="crypto-card" id="eth">
-				<h2>Ethereum<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
+			<main>
+				<div class="crypto-card" id="btc">
+					<h2>Bitcoin<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="eth">
+					<h2>Ethereum<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="xrp">
+					<h2>Ripple<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="ltc">
+					<h2>Litecoin<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="xmr">
+					<h2>Monero<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="lsk">
+					<h2>Lisk<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="dash">
+					<h2>Dash<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="xem">
+					<h2>NEM<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="crypto-card" id="doge">
+					<h2>Dogecoin<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
+					<h3>USD: <span class="usd"></span></h3>
+					<h3>EUR: <span class="eur"></span></h3>
+					<div class="clearfix"></div>
+				</div>
+				
+			</main>
 			
-			<div class="crypto-card" id="xrp">
-				<h2>Ripple<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
+			<a class="refresh refresh-all"><i class="fa fa-sync"></i> Refresh All</a>
 			
-			<div class="crypto-card" id="ltc">
-				<h2>Litecoin<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
-			
-			<div class="crypto-card" id="xmr">
-				<h2>Monero<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
-			
-			<div class="crypto-card" id="lsk">
-				<h2>Lisk<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
-			
-			<div class="crypto-card" id="dash">
-				<h2>Dash<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
-			
-			<div class="crypto-card" id="xem">
-				<h2>NEM<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
-			
-			<div class="crypto-card" id="doge">
-				<h2>Dogecoin<a class="refresh"><i class="fa fa-sync"></i> Refresh</a></h2>
-				<h3>USD: <span class="usd"></span></h3>
-				<h3>EUR: <span class="eur"></span></h3>
-				<div class="clearfix"></div>
-			</div>
-			
-		</main>
-		
-		<a class="refresh refresh-all"><i class="fa fa-sync"></i> Refresh All</a>
-		
-		<footer>
-			<p>API from <a href="https://min-api.cryptocompare.com/">CryptoCompare</a></p>
-			<p>Copyright &copy; 2018 | Website by Cristi Cismas</p>
-			<p><a href="https://cristicismas.github.io" target="_blank">My Portfolio</a></p>
-		</footer>
+			<footer>
+				<p>API from <a href="https://min-api.cryptocompare.com/">CryptoCompare</a></p>
+				<p>Copyright &copy; 2018 | Website by Cristi Cismas</p>
+				<p><a href="https://cristicismas.github.io" target="_blank">My Portfolio</a></p>
+			</footer>
+		</div>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="index.js"></script>

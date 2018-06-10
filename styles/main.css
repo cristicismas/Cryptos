@@ -8,6 +8,14 @@
 
 /* General */
 
+#root {
+	min-height: 100vh;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 80px;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -93,6 +101,7 @@ main .crypto-card:hover .refresh {
 }
 
 .refresh-all {
+	text-align: center;
 	align-self: center;
 	opacity: 0.7;
 	font-size: 20px;
@@ -100,7 +109,9 @@ main .crypto-card:hover .refresh {
 	cursor: pointer;
 	padding: 10px 15px;
 	border-radius: 10px;
-	margin: 20px;
+	display: block;
+	width: 130px;
+	margin: 20px auto;
 }
 
 .refresh-all:hover {
@@ -110,6 +121,9 @@ main .crypto-card:hover .refresh {
 /* Footer */
 
 footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--secondary-color);
